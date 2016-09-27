@@ -1,0 +1,19 @@
+h2 Show video
+
+ul
+  li
+    strong User:&nbsp;
+    = @video.user_id
+  li
+    strong Url:&nbsp;
+    = @video.url
+  li
+    strong Title:&nbsp;
+    = @video.title
+  li
+    strong Description:&nbsp;
+    = @video.description
+
+= link "Edit", to: video_path(@conn, :edit, @video)
+| &nbsp;
+= link "Back", to: video_path(@conn, :index)

@@ -1,0 +1,5 @@
+h2 Edit video
+
+= render "form.html", changeset: @changeset, categories: @categories, action: video_path(@conn, :update, @video)
+
+= link "Back", to: video_path(@conn, :index)
